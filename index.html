@@ -1,8 +1,76 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моя перша спроба</title>
-  </head>
-  <body>
-    <p>Моя перша спроба опублікувати веб-сторінку</p>
-  </body>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: white;
+            padding: 40px 60px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #4facfe;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #00c6ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Вітаю 👋</h1>
+        <p>Моя перша спроба опублікувати веб-сторінку</p>
+        <button class="btn" onclick="alert('Ти молодець! 🚀')">
+            Натисни мене
+        </button>
+    </div>
+</body>
 </html>
